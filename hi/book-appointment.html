@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Shabdkaar Creation</title>
+    <meta name="description" content="Book an appointment with Shabdkaar Creation for your film making, video production, or photoshoot project.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Shabdkaar Creation</h1>
+                <span>Where stories find their voice</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="process.html">Process</a></li>
+                <li><a href="book-appointment.html">Book Now</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="booking-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Book Your Appointment</h1>
+                <p>Let's bring your vision to life</p>
+            </div>
+        </section>
+
+        <!-- Booking Form Section -->
+        <section class="booking-form-section">
+            <div class="container">
+                <div class="booking-content">
+                    <div class="booking-info">
+                        <h2>Start Your Creative Journey</h2>
+                        <p>Ready to tell your story? We'd love to hear about your project and discuss how we can help bring your vision to life.</p>
+
+                        <div class="booking-benefits">
+                            <h3>What to expect:</h3>
+                            <ul>
+                                <li>📞 Free initial consultation</li>
+                                <li>🎯 Personalized project proposal</li>
+                                <li>📅 Flexible scheduling</li>
+                                <li>💡 Creative brainstorming session</li>
+                                <li>📋 Detailed project timeline</li>
+                            </ul>
+                        </div>
+
+                        <div class="contact-info">
+                            <h3>Prefer to reach out directly?</h3>
+                            <p>📧 info@shabdkaarcreation.com</p>
+                            <p>📱 +91 98765 43210</p>
+                            <p>💬 WhatsApp: +91 98765 43210</p>
+                        </div>
+                    </div>
+
+                    <div class="booking-form-container">
+                        <form id="booking-form" class="booking-form">
+                            <h3>Book Your Consultation</h3>
+
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="service">Service Interested In *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Select a service</option>
+                                    <option value="film-making">Film Making</option>
+                                    <option value="video-production">Video Production</option>
+                                    <option value="photoshoots">Photoshoots</option>
+                                    <option value="music-videos">Music Videos</option>
+                                    <option value="commercial-ads">Commercial Ads</option>
+                                    <option value="event-coverage">Event Coverage</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="preferred-date">Preferred Date</label>
+                                <input type="date" id="preferred-date" name="preferred-date">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="preferred-time">Preferred Time</label>
+                                <select id="preferred-time" name="preferred-time">
+                                    <option value="">Select time</option>
+                                    <option value="morning">Morning (9 AM - 12 PM)</option>
+                                    <option value="afternoon">Afternoon (12 PM - 5 PM)</option>
+                                    <option value="evening">Evening (5 PM - 8 PM)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget">Estimated Budget Range</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-50k">Under ₹50,000</option>
+                                    <option value="50k-1lakh">₹50,000 - ₹1,00,000</option>
+                                    <option value="1lakh-5lakh">₹1,00,000 - ₹5,00,000</option>
+                                    <option value="5lakh-10lakh">₹5,00,000 - ₹10,00,000</option>
+                                    <option value="above-10lakh">Above ₹10,00,000</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="project-brief">Project Brief *</label>
+                                <textarea id="project-brief" name="project-brief" rows="5" placeholder="Tell us about your project, vision, goals, and any specific requirements..." required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="hear-about">How did you hear about us?</label>
+                                <select id="hear-about" name="hear-about">
+                                    <option value="">Select option</option>
+                                    <option value="google">Google Search</option>
+                                    <option value="social-media">Social Media</option>
+                                    <option value="referral">Referral</option>
+                                    <option value="website">Our Website</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter" value="yes">
+                                    <span class="checkmark"></span>
+                                    Subscribe to our newsletter for creative insights and updates
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn-primary">Book Appointment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="booking-faq">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4>How long does a typical project take?</h4>
+                        <p>Project timelines vary depending on scope and complexity. A simple video might take 2-4 weeks, while a full feature film could take several months. We'll provide a detailed timeline during our consultation.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Do you work with clients outside of India?</h4>
+                        <p>Yes! We work with international clients and can accommodate remote collaboration. Travel arrangements can be made for on-location shoots when needed.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>What is your payment structure?</h4>
+                        <p>We typically require a 30-50% deposit to begin work, with the balance due upon completion. For larger projects, we can arrange milestone-based payments.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Can you work with my existing content?</h4>
+                        <p>Absolutely! We can enhance existing footage, photos, or content. Many clients come to us for post-production work on content they've already captured.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>What formats do you deliver in?</h4>
+                        <p>We deliver in multiple formats including HD, 4K, social media optimized, web-ready, and broadcast quality. We can also provide raw files if needed.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Do you provide revisions?</h4>
+                        <p>Yes, we include a set number of revisions in our packages. Additional revisions can be accommodated for a fee. We work collaboratively to ensure you're completely satisfied.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shabdkaar Creation</h3>
+                    <p>Where stories find their voice through film, frames, and motion.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#film-making">Film Making</a></li>
+                        <li><a href="services.html#video-production">Video Production</a></li>
+                        <li><a href="services.html#photoshoots">Photoshoots</a></li>
+                        <li><a href="services.html#music-videos">Music Videos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="process.html">Our Process</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Get In Touch</h4>
+                    <p>📧 info@shabdkaarcreation.com</p>
+                    <p>📱 +91 98765 43210</p>
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">YouTube</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Shabdkaar Creation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

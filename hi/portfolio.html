@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Shabdkaar Creation</title>
+    <meta name="description" content="Explore our portfolio of film making, video production, photoshoots, and creative projects by Shabdkaar Creation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Shabdkaar Creation</h1>
+                <span>Where stories find their voice</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="process.html">Process</a></li>
+                <li><a href="book-appointment.html">Book Now</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="portfolio-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Our Portfolio</h1>
+                <p>Stories brought to life through film, frames, and motion</p>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="portfolio-filter">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="films">Films</button>
+                    <button class="filter-btn" data-filter="commercials">Commercials</button>
+                    <button class="filter-btn" data-filter="photoshoots">Photoshoots</button>
+                    <button class="filter-btn" data-filter="music-videos">Music Videos</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid -->
+        <section class="portfolio-gallery">
+            <div class="container">
+                <div class="portfolio-items">
+                    <!-- Films -->
+                    <div class="portfolio-item" data-category="films">
+                        <img src="https://images.unsplash.com/photo-1489599735734-79b4d4c1e0a8?w=600&h=400&fit=crop" alt="Cinematic Short Film">
+                        <div class="portfolio-overlay">
+                            <h4>The Last Journey</h4>
+                            <p>Short Film • Drama • 12min</p>
+                            <span class="category">Films</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="films">
+                        <img src="https://images.unsplash.com/photo-1489599735734-79b4d4c1e0a8?w=600&h=400&fit=crop" alt="Documentary Film">
+                        <div class="portfolio-overlay">
+                            <h4>Voices of the Valley</h4>
+                            <p>Documentary • 25min</p>
+                            <span class="category">Films</span>
+                        </div>
+                    </div>
+
+                    <!-- Commercials -->
+                    <div class="portfolio-item" data-category="commercials">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=400&fit=crop" alt="Brand Commercial">
+                        <div class="portfolio-overlay">
+                            <h4>TechCorp Launch</h4>
+                            <p>Commercial • 30sec</p>
+                            <span class="category">Commercials</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="commercials">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=400&fit=crop" alt="Product Ad">
+                        <div class="portfolio-overlay">
+                            <h4>Luxe Fashion Campaign</h4>
+                            <p>Commercial • 45sec</p>
+                            <span class="category">Commercials</span>
+                        </div>
+                    </div>
+
+                    <!-- Photoshoots -->
+                    <div class="portfolio-item" data-category="photoshoots">
+                        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&h=400&fit=crop" alt="Portrait Photoshoot">
+                        <div class="portfolio-overlay">
+                            <h4>Executive Portraits</h4>
+                            <p>Corporate • Headshots</p>
+                            <span class="category">Photoshoots</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="photoshoots">
+                        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&h=400&fit=crop" alt="Fashion Shoot">
+                        <div class="portfolio-overlay">
+                            <h4>Summer Collection</h4>
+                            <p>Fashion • Editorial</p>
+                            <span class="category">Photoshoots</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="photoshoots">
+                        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&h=400&fit=crop" alt="Product Photography">
+                        <div class="portfolio-overlay">
+                            <h4>Product Showcase</h4>
+                            <p>E-commerce • Lifestyle</p>
+                            <span class="category">Photoshoots</span>
+                        </div>
+                    </div>
+
+                    <!-- Music Videos -->
+                    <div class="portfolio-item" data-category="music-videos">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=400&fit=crop" alt="Music Video">
+                        <div class="portfolio-overlay">
+                            <h4>Dreams Unfold</h4>
+                            <p>Music Video • Indie • 4min</p>
+                            <span class="category">Music Videos</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="music-videos">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=400&fit=crop" alt="Concert Video">
+                        <div class="portfolio-overlay">
+                            <h4>Live at the Arena</h4>
+                            <p>Concert • Rock • 8min</p>
+                            <span class="category">Music Videos</span>
+                        </div>
+                    </div>
+
+                    <!-- Events -->
+                    <div class="portfolio-item" data-category="events">
+                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&h=400&fit=crop" alt="Wedding Coverage">
+                        <div class="portfolio-overlay">
+                            <h4>Eternal Vows</h4>
+                            <p>Wedding • Full Day</p>
+                            <span class="category">Events</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="events">
+                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&h=400&fit=crop" alt="Corporate Event">
+                        <div class="portfolio-overlay">
+                            <h4>Annual Conference</h4>
+                            <p>Corporate • Multi-day</p>
+                            <span class="category">Events</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Project -->
+        <section class="featured-project">
+            <div class="container">
+                <h2>Featured Project</h2>
+                <div class="featured-content">
+                    <div class="featured-text">
+                        <h3>"The Artisan's Journey"</h3>
+                        <p>A cinematic documentary following the life of master craftsmen in rural India, showcasing their traditional techniques and the impact of modernization on their ancient arts.</p>
+                        <p>This 25-minute film won the "Best Documentary" award at the Mumbai International Film Festival and has been featured in several international film festivals.</p>
+                        <div class="project-details">
+                            <span>Duration: 25 minutes</span>
+                            <span>Format: 4K Cinema</span>
+                            <span>Awards: Best Documentary 2023</span>
+                        </div>
+                        <a href="book-appointment.html" class="btn-primary">Discuss Your Project</a>
+                    </div>
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1489599735734-79b4d4c1e0a8?w=600&h=400&fit=crop" alt="Featured documentary project">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="portfolio-cta">
+            <div class="container">
+                <h2>Ready to Create Your Story?</h2>
+                <p>Let's bring your vision to life with our expertise in film, video, and photography.</p>
+                <a href="book-appointment.html" class="btn-primary">Start Your Project</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shabdkaar Creation</h3>
+                    <p>Where stories find their voice through film, frames, and motion.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#film-making">Film Making</a></li>
+                        <li><a href="services.html#video-production">Video Production</a></li>
+                        <li><a href="services.html#photoshoots">Photoshoots</a></li>
+                        <li><a href="services.html#music-videos">Music Videos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="process.html">Our Process</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Get In Touch</h4>
+                    <p>📧 info@shabdkaarcreation.com</p>
+                    <p>📱 +91 98765 43210</p>
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">YouTube</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Shabdkaar Creation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Portfolio filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                portfolioItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
